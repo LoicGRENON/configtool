@@ -7,10 +7,14 @@
 						<b-form-select :value="template.board" @change="setSelectedBoard($event)" v-preset="preset.board" :title="$t('general.boardDescription')">
 							<option value="azsmz">Azsmz Mini</option>
 							<option value="azteegX5_1.1">Azteeg X5 Mini v1.1</option>
+							<option value="biqoctopus_1.1">BTT Octopus v1.1 F429</option>
+							<option value="biqoctopuspro_1.0">BTT Octopus Pro v1.0 F429</option>
 							<option value="fly_cdy">Fly-CDY</option>
 							<option value="fly_cdyv2">Fly-CDYv2</option>
+							<option value="fly_cdyv3">Fly-CDYv3</option>
 							<option value="fly_E3">Fly-E3</option>
 							<option value="fly_e3_pro">Fly-E3-Pro</option>
+							<option value="fly_e3_prov2">Fly-E3-Pro-v2</option>
 							<option value="fly_F407ZG">Fly-F407ZG</option>
 							<option value="fly_super8">Fly-Super8</option>
 							<option value="fystec_spider">Fysetc Spider 407 Version</option>
