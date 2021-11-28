@@ -2119,7 +2119,7 @@ export default {
             stepperDriverTimings: "",
             stepperDriverSmart: true,
             stepperDriver5160: true,
-            stepperDriver5160SPI: '3',
+            stepperDriver5160SPI: '0',
             stepperDriver5160Pins: '',
             stepperDriver5160CS: [],
             serialRxPin:'D.9',
