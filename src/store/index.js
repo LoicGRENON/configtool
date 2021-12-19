@@ -139,6 +139,8 @@ export default new Vuex.Store({
 			if (board.startsWith('duet3')) {
 				state.template.standalone = false;
 				state.addDWC = false;
+			} else if (board.startsWith('fly_gemini')){
+				state.template.standalone = false;
 			} else {
 				state.template.standalone = true;
 			}

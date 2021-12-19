@@ -21,6 +21,7 @@
 
 				<b-form-radio-group v-model="selectedMachine" name="machine" stacked class="mb-3">
 					<b-form-radio value="ender3">Creality Ender 3 - Fly-E3</b-form-radio>
+					<b-form-radio value="vzbot">VzBot - Fly-E3-Pro</b-form-radio>
 				</b-form-radio-group>
 
 				<!--p>{{$t('start.contributed')}}</p>

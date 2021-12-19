@@ -16,6 +16,7 @@
 							<option value="fly_e3_pro">Fly-E3-Pro</option>
 							<option value="fly_e3_prov2">Fly-E3-Pro-v2</option>
 							<option value="fly_F407ZG">Fly-F407ZG</option>
+							<option value="fly_gemini">Fly-Gemini</option>
 							<option value="fly_super8">Fly-Super8</option>
 							<option value="fystec_spider">Fysetc Spider 407 Version</option>
 							<option value="mkssbase_1.3">MKS SBase 1.3</option>
@@ -62,7 +63,7 @@
 			</b-form-row>
 
 			<!--b-form-checkbox v-if="template.board === 'duet3'" v-model="standalone" v-preset.left title="Run RepRapFirmware in stand-alone mode without an attached single-board computer">Run in standalone mode without SBC</b-form-checkbox-->
-			<b-form-checkbox v-if="board.hasSBC" v-model="standalone" v-preset.left :title="$t('general.sbcDescription')">{{$t('general.sbc')}}</b-form-checkbox>
+			<b-form-checkbox v-if="board.hasSBC && !board.hasSBCOnboard" v-model="standalone" v-preset.left :title="$t('general.sbcDescription')">{{$t('general.sbc')}}</b-form-checkbox>
 			<b-form-checkbox v-model="nvram" v-preset.left :title="$t('general.M501Description')">{{$t('general.M501')}}</b-form-checkbox>
 			<b-form-checkbox v-if="board.hasPowerFailureDetection" v-model="autoSaveEnabled" v-preset.left="preset.auto_save.enabled" :title="$t('general.M911Description')">{{$t('general.M911')}}</b-form-checkbox>
 			<div v-show="autoSaveEnabled" class="mt-3 pl-4">
