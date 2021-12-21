@@ -179,7 +179,7 @@ export default {
 				if (prevPage.path === '/Network' && !this.template.standalone) {
 					prevPage = this.$router.options.routes[--pageIndex];
 				}
-				if (prevPage.path === '/Display' && !this.board.supportsDisplay) {
+				if (prevPage.path === '/Display' && !this.board.supports12864) {
 					prevPage = this.$router.options.routes[--pageIndex];
 				}
 				this.$router.push(prevPage);
@@ -189,7 +189,7 @@ export default {
 			let pageIndex = this.$router.options.routes.findIndex(route => route.path === this.$route.path);
 			if (pageIndex + 2 < this.$router.options.routes.length) {
 				let nextPage = this.$router.options.routes[++pageIndex];
-				if (nextPage.path === '/Display' && !this.board.supportsDisplay) {
+				if (nextPage.path === '/Display' && !this.board.supports12864) {
 					nextPage = this.$router.options.routes[++pageIndex];
 				}
 				if (nextPage.path === '/Network' && !this.template.standalone) {
