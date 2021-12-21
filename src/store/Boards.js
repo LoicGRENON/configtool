@@ -1989,9 +1989,9 @@ export default {
             wifi8266CSPin: 'NoPin',
             esp32: {
                 esp32Supported: true,
-                espDataReadyPin:'E.13',
-                lpcTfrReadyPin:'E.14',
-                espResetPin:'E.15',
+                espDataReadyPin:'B.10',
+                lpcTfrReadyPin:'B.11',
+                espResetPin:'C.14',
                 wifi8266CSPin: 'NoPin'
             },
             neopixel :'E.6'
