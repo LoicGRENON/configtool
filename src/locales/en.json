@@ -371,7 +371,8 @@
     "auxRXDescription": "This is the pin to be used in board.txt for serial.aux.rxTxPins",
     "auxTX": "Serial TX Pin",
     "auxTXDescription": "This is the pin to be used in board.txt for serial.aux.rxTxPins",
-    "warning": "Warning!: A screen can’t be used in conjunction with upgrading the WiFi adapter via DWC as there is only one serial connection available."
+    "warning": "Warning!: A screen can’t be used in conjunction with upgrading the WiFi adapter via DWC as there is only one serial connection available.",
+    "tftWarning": "Warning: The generated configuration might not work on your specific setup. If the TFT says \"Printer not connected\" find M575 in your config.g and try S0/S1/S3 instead of S2."
   },
   "network": {
     "title": "Network",
