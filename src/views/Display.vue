@@ -154,6 +154,11 @@
 							{{$t('display.warning')}}
 						</b-col>
 					</b-form-row>
+					<b-form-row>
+						<b-col v-show="isTft" cols="auto">
+							{{$t('display.tftWarning')}}
+						</b-col>
+					</b-form-row>
 				</b-card>
 			</b-col>
 		</b-row>
