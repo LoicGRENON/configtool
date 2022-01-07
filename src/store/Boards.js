@@ -2685,7 +2685,7 @@ export default {
             serialTxPin:'D.8',
             espDataReadyPin:'D.7',
             lpcTfrReadyPin:'D.10',
-            espResetPin:'A.8',
+            espResetPin:'B.3',
             lpc: {
                 externalSDCard:{
                     csPin: "NoPin",
