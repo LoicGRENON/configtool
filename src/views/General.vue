@@ -18,7 +18,7 @@
 							<option value="fly_F407ZG">Fly-F407ZG</option>
 							<option value="fly_gemini">Fly-Gemini</option>
 							<option value="fly_super8">Fly-Super8</option>
-							<option value="fystec_spider">Fysetc Spider 407 Version</option>
+							<option value="fysetc_spider">Fysetc Spider 407 Version</option>
 							<option value="mkssbase_1.3">MKS SBase 1.3</option>
 							<option value="mkssgenl_1.0">MKS SGen L v1.0</option>
 							<option value="mkssgenl_2.0">MKS SGen L v2.0</option>

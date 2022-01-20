@@ -2103,7 +2103,7 @@ export default {
         {
             name: 'fly_super8',
             type: 'STM32F4',
-            caption: 'Flu Super8',
+            caption: 'Fly Super8',
             motorWarningCurrent: 1800,
             motorLimitCurrent: 2000,
             seriesResistor: 4700,
