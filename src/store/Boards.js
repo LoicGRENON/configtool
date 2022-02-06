@@ -2386,7 +2386,7 @@ export default {
                     panelButtonPin: "NoPin",
                     spiChannel: 2, //Software SPI
                 },
-                diagnosticPin: "A.8",
+                diagnosticPin: "NoPin",
             },
             drives: [
                 {
