@@ -16,7 +16,8 @@
 							<option value="fly_e3_pro">Fly-E3-Pro</option>
 							<option value="fly_e3_prov2">Fly-E3-Pro-v2</option>
 							<option value="fly_F407ZG">Fly-F407ZG</option>
-							<option value="fly_gemini">Fly-Gemini</option>
+							<option value="fly_gemini">Fly-Gemini-V1</option>
+							<option value="fly_geminiv1.1">Fly-Gemini-V1.1</option>
 							<option value="fly_super8">Fly-Super8</option>
 							<option value="fysetc_spider">Fysetc Spider 407 Version</option>
 							<option value="mkssbase_1.3">MKS SBase 1.3</option>

@@ -2711,28 +2711,13 @@ export default {
             },
             drives: [
                 {
-                    diag: "G.6",
+                    diag: "A.3",
                 },
                 {
-                    diag: "G.9",
+                    diag: "B.1",
                 },
                 {
-                    diag: "G.10",
-                },
-                {
-                    diag: "G.11",
-                },
-                {
-                    diag: "G.12",
-                },
-                {
-                    diag: "G.13",
-                },
-                {
-                    diag: "G.14",
-                },
-                {
-                    diag: "G.15",
+                    diag: "B.10",
                 }
             ],
             auxRX:'A.10',
@@ -2740,7 +2725,102 @@ export default {
             serialAmount:'2',
             wifi8266CSPin: 'B.12',
             esp32: {
-                esp32Supported: true,
+                esp32Supported: false,
+                espDataReadyPin:'D.7',
+                lpcTfrReadyPin:'D.10',
+                espResetPin:'G.7',
+                wifi8266CSPin: 'B.12'
+            },
+            neopixel :'B.0'
+        },
+        {
+            name: 'fly_geminiv1.1',
+            type: 'STM32F4',
+            caption: 'Fly-Gemini-V1.1',
+            motorWarningCurrent: 1200,
+            motorLimitCurrent: 2000,
+            seriesResistor: 4700,
+            microstepping: true,
+            microsteppingInterpolation: true,
+            numDrives: 4,
+            heaterPorts: ['bed', 'e0heat'],
+            fanPorts: ['fan0','fan1'],
+            pwmPorts: ['bed', 'e0heat','fan0'],
+            gpioPorts: ['xstop','ystop','zstop','probe'],
+            analogPorts: ['bedtemp', 'e0temp'],
+            blPorts: ['servo0'],
+            spiCsPorts: [],
+            hasEthernet: false,
+            hasWiFi: false,
+            hasESP: false,
+            hasESPUpdate: false,
+            hasESPOnboard: false,
+            hasSBC: true,
+            hasSBCOnboard: true,
+            hasPowerFailureDetection: false,
+            hasMotorLoadDetection: true,
+            supportsDisplay: true,
+            supports12864: false,
+            firmwareStandaloneFile: 'firmware-stm32f4-wifi',
+            firmwareSBCFile: 'firmware-stm32f4-sbc',
+            firmwareWifiFile: 'DuetWiFiServer-esp8266-stm32f4',
+            firmwareWifi32File: 'DuetWiFiServer-esp32-stm32f4',
+            requiresBeta: false,
+            iapFile: '',
+            expansionBoards: [],
+            maxExpansionBoards: 1,
+            stepperDriver: "",
+            stepperDriverTimings: "",
+            stepperDriverSmart: true,
+            stepperDriver5160: true,
+            stepperDriver5160SPI: '0',
+            stepperDriver5160Pins: 'N/A',
+            stepperDriver5160CS: [],
+            serialRxPin:'D.9',
+            serialTxPin:'D.8',
+            espDataReadyPin:'D.7',
+            lpcTfrReadyPin:'D.10',
+            espResetPin:'C.9',
+            lpc: {
+                externalSDCard:{
+                    csPin: "NoPin",
+                    cardDetectPin: "NoPin",
+                    spiFrequencyHz: 4000000,
+                    spiChannel: 0,
+                },
+                internalSDCardSPIFrequencyHz: 25000000,
+                softwareSPI:{
+                    pins: ["NoPin", "NoPin", "NoPin"],
+                },
+                lcd:{
+                    lcdCSPin:       "E.9",
+                    lcdBeepPin:     "C.5",
+                    encoderPinA:    "E.7",
+                    encoderPinB:    "B.2",
+                    encoderPinSw:   "B.1",
+                    lcdDCPin:       "NoPin",
+                    panelButtonPin: "NoPin",
+                    spiChannel: 4, //Software SPI
+                },
+                diagnosticPin: "A.13",
+            },
+            drives: [
+                {
+                    diag: "A.3",
+                },
+                {
+                    diag: "B.1",
+                },
+                {
+                    diag: "B.10",
+                }
+            ],
+            auxRX:'A.10',
+            auxTX:'A.9',
+            serialAmount:'2',
+            wifi8266CSPin: 'B.12',
+            esp32: {
+                esp32Supported: false,
                 espDataReadyPin:'D.7',
                 lpcTfrReadyPin:'D.10',
                 espResetPin:'G.7',
