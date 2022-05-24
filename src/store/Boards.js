@@ -2322,7 +2322,7 @@ export default {
             caption: 'Fly-E3-Pro-v3',
             motorWarningCurrent: 1200,
             motorLimitCurrent: 2000,
-            seriesResistor: 4700,
+            seriesResistor: 2200,
             microstepping: true,
             microsteppingInterpolation: true,
             numDrives: 5,
